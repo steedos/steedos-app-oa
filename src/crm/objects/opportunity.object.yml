@@ -1,0 +1,264 @@
+name: opportunity
+label: 业务机会
+icon: opportunity
+enable_files: true
+enable_search: true
+enable_tasks: true
+enable_events: true
+enable_notes: false
+enable_api: true
+enable_share: true
+enable_chatter: true
+fields:
+  name:
+    label: 业务机会名称
+    type: text
+    searchable: true
+    required: true
+    sortable: true
+  account:
+    label: 客户名
+    type: master_detail
+    reference_to: accounts
+    sortable: true
+    filterable: true
+    required: true
+  due_date:
+    label: 计划关闭日期
+    type: date
+  stage:
+    label: 阶段
+    type: select
+    options:
+      - label: 机会确认
+        value: Qualification
+      - label: 需求分析
+        value: Needs_Analysis
+      - label: 方案提交
+        value: Proposal
+      - label: 商务谈判
+        value: Negotiation
+      - label: 已结束，已签单
+        value: Closed_Won
+      - label: 已结束，未签单
+        value: Closed_Lost
+    required: true
+  probability	:
+    label: 可能性
+    type: number
+    sortable: true
+  amount:
+    label: 金额
+    type: currency
+  private:
+    label: 私有
+    type: boolean
+  next_step:
+    label: 下一步
+    type: text
+  lead_source:
+    type: select
+    label: 潜在客户来源
+    searchable: true
+    sortable: true
+    options:
+      - label: 广告
+        value: Advertisement
+      - label: 客户活动
+        value: Customer_Event
+      - label: 员工推荐
+        value: Employee_Referral
+      - label: 其他
+        value: Other
+      - label: 合作伙伴
+        value: Partner
+      - label: 采购清单
+        value: Purchased_List
+      - label: 贸易展览
+        value: Trade_Show
+      - label: 线上研讨
+        value: Webinar
+      - label: 网站
+        value: Website
+    filterable: true
+  loss_reason:
+    type: select
+    label: 失败原因
+    searchable: true
+    sortable: true
+    options:
+      - label: 输给竞争对手
+        value: Lost_to_Competitor
+      - label: 没有预算 / 资金有损	
+        value: No_Budget_/_Lost_Funding	
+      - label: 无果而终 / 没有响应	
+        value: No_Decision_/_Non-Responsive	
+      - label: 价格
+        value: Price
+      - label: 其他
+        value: Other
+  description:
+    label: 备注
+    type: textarea
+    is_wide: true
+    rows: 4
+list_views:
+  operating:
+    label: 进行中的业务机会
+    columns:
+      - field: name
+        width: 220
+      - field: account
+        width: 280
+      - field: amount
+        width: 120
+      - field: due_date
+        width: 120
+      - field: stage
+        width: 160
+      - field: probability
+        width: 120
+      - field: lead_source
+        width: 120
+      - field: owner
+        width: 120
+    filter_scope: space
+    filters: [["stage", "!=", Closed_Won],["stage", "!=", Closed_Lost]]
+    filter_fields:
+      - stage
+      - lead_source
+      - account
+      - name
+  lost:
+    label: 已失败的业务机会
+    columns:
+      - field: name
+        width: 220
+      - field: account
+        width: 280
+      - field: amount
+        width: 120
+      - field: lead_source
+        width: 120
+      - field: loss_reason
+        width: 220
+      - field: owner
+        width: 120
+    filter_scope: space
+    filters: [["stage", "=", Closed_Lost]]
+    filter_fields:
+      - loss_reason
+      - lead_source
+      - account
+      - name
+  won:
+    label: 已成功的业务机会
+    columns:
+      - field: name
+        width: 220
+      - field: account
+        width: 280
+      - field: amount
+        width: 120
+      - field: amount
+        width: 180
+      - field: lead_source
+        width: 120
+      - field: owner
+        width: 120
+    filter_scope: space
+    filters: [["stage", "=", Closed_Won]]
+    filter_fields:
+      - lead_source
+      - account
+      - name
+  all:
+    label: 全部业务机会
+    columns:
+      - field: name
+        width: 220
+      - field: account
+        width: 280
+      - field: amount
+        width: 120
+      - field: due_date
+        width: 120
+      - field: stage
+        width: 160
+      - field: probability
+        width: 120
+      - field: lead_source
+        width: 120
+      - field: owner
+        width: 120
+    filter_scope: space
+    filter_fields:
+      - stage
+      - lead_source
+      - account
+      - name
+  recent:
+    label: 最近查看
+    columns:
+      - field: name
+        width: 220
+      - field: account
+        width: 280
+      - field: amount
+        width: 120
+      - field: due_date
+        width: 120
+      - field: stage
+        width: 160
+      - field: probability
+        width: 120
+      - field: lead_source
+        width: 120
+      - field: owner
+        width: 120
+    filter_scope: space
+    filter_fields:
+      - stage
+      - lead_source
+      - account
+      - name
+  mine:
+    label: 我的业务机会
+    columns:
+      - field: name
+        width: 220
+      - field: account
+        width: 280
+      - field: amount
+        width: 120
+      - field: due_date
+        width: 120
+      - field: stage
+        width: 160
+      - field: probability
+        width: 120
+      - field: lead_source
+        width: 120
+      - field: owner
+        width: 120
+    filter_scope: mine
+    filter_fields:
+      - stage
+      - lead_source
+      - account
+      - name
+permission_set:
+  user:
+    allowCreate: false
+    allowDelete: false
+    allowEdit: false
+    allowRead: true
+    modifyAllRecords: false
+    viewAllRecords: false
+  admin:
+    allowCreate: true
+    allowDelete: true
+    allowEdit: true
+    allowRead: true
+    modifyAllRecords: true
+    viewAllRecords: true

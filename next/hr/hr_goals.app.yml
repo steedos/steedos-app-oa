@@ -1,0 +1,17 @@
+_id: hr
+name: 人力资源
+description: 员工、工资、考勤、绩效考核
+icon_slds: new_group
+is_creator: false
+objects: 
+  - hr_goals
+  - hr_joblog
+  - tasks
+  - events
+  - reports
+mobile_objects: 
+  - hr_goals
+  - hr_joblog
+  - tasks
+  - events
+  - reports

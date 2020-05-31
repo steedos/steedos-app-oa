@@ -1,0 +1,15 @@
+_id: project
+name: 项目
+description: 项目管理、任务管理
+icon_slds: timesheet_entry
+is_creator: false
+objects: 
+  - projects
+  - tasks
+  - events
+  - reports
+mobile_objects: 
+  - projects
+  - tasks
+  - events
+  - reports
