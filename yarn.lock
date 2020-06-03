@@ -808,7 +808,7 @@
   dependencies:
     tslib "^1.10.0"
 
-"@steedos/accounts@^1.19.4":
+"@steedos/accounts@^1.19.5":
   version "1.19.5"
   resolved "https://registry.npm.taobao.org/@steedos/accounts/download/@steedos/accounts-1.19.5.tgz#c7e94a6fdad8cd1ce0c7e1af7dbf9103f49043f9"
   integrity sha1-x+lKb9rYzRzgx+Gvfb+RA/SQQ/k=
@@ -969,7 +969,7 @@
 
 "@steedos/migrate@^1.20.7":
   version "1.20.7"
-  resolved "https://registry.npm.taobao.org/@steedos/migrate/download/@steedos/migrate-1.20.7.tgz#fa2c036d9aa79e8d5059defcc4b548e86e922887"
+  resolved "https://registry.npm.taobao.org/@steedos/migrate/download/@steedos/migrate-1.20.7.tgz?cache=0&sync_timestamp=1590918530060&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40steedos%2Fmigrate%2Fdownload%2F%40steedos%2Fmigrate-1.20.7.tgz#fa2c036d9aa79e8d5059defcc4b548e86e922887"
   integrity sha1-+iwDbZqnno1QWd78xLVI6G6SKIc=
   dependencies:
     migrate "^1.6.2"
@@ -1022,7 +1022,7 @@
 
 "@steedos/schemas@^1.20.7":
   version "1.20.7"
-  resolved "https://registry.npm.taobao.org/@steedos/schemas/download/@steedos/schemas-1.20.7.tgz#2fa9fae2d8be0ed521df0e56c1da153507b3aa84"
+  resolved "https://registry.npm.taobao.org/@steedos/schemas/download/@steedos/schemas-1.20.7.tgz?cache=0&sync_timestamp=1590918550577&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40steedos%2Fschemas%2Fdownload%2F%40steedos%2Fschemas-1.20.7.tgz#2fa9fae2d8be0ed521df0e56c1da153507b3aa84"
   integrity sha1-L6n64ti+DtUh3w5WwdoVNQezqoQ=
 
 "@steedos/standard-objects@^1.20.7":
@@ -7341,7 +7341,7 @@ stealthy-require@^1.1.1:
   resolved "https://registry.npm.taobao.org/stealthy-require/download/stealthy-require-1.1.1.tgz#35b09875b4ff49f26a777e509b3090a3226bf24b"
   integrity sha1-NbCYdbT/SfJqd35QmzCQoyJr8ks=
 
-steedos-server@^1.20.4:
+steedos-server@^1.20.7:
   version "1.20.7"
   resolved "https://registry.npm.taobao.org/steedos-server/download/steedos-server-1.20.7.tgz#68d81ae2208e508337da99aba6d6feec176df5b8"
   integrity sha1-aNga4iCOUIM32pmrptb+7Bdt9bg=
