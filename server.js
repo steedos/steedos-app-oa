@@ -10,6 +10,7 @@ server.Fiber(function () {
             steedos.init();
             server.callStartupHooks();
             server.runMain();
+            console.log(`Project is running at ${process.env.ROOT_URL}`);
         })
     } catch (error) {
        console.error(error.stack)
