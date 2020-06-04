@@ -4,3 +4,4 @@ node_modules
 isolate-*.log
 .yalc
 .DS_Store
+storage/**
