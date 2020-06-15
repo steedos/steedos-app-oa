@@ -1,0 +1,14 @@
+version: "2"
+
+services:
+  steedos:
+    build: .
+    image: steedos-project-oa:latest
+    restart: unless-stopped
+    ports:
+      - "5080:5080"
+    volumes:
+      - /srv/workflow/cfs:/storage
+      - ./src:/app/src
+      - ./steedos-config.yml:/app/steedos-config.yml
+      - ./.env.local:/app/.env.local
