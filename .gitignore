@@ -5,3 +5,4 @@ isolate-*.log
 .yalc
 .DS_Store
 storage/**
+docker-volumes
