@@ -23,10 +23,10 @@ tenant:
   background_url: 
   enable_register: true
   enable_forget_password: false
-  enable_create_tenant: false
-  enable_password_login: false
+  enable_create_tenant: true
+  enable_password_login: true
   enable_bind_email: false
-  enable_bind_mobile: true
+  enable_bind_mobile: false
 plugins:
   - "@steedos/accounts"
   - "@steedos/app-crm"
