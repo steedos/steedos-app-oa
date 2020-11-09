@@ -6,7 +6,7 @@ datasources:
       - "./src/**"
 public:
   cfs:
-    store: "local"
+    store: ${STEEDOS_CFS_STORE}
     local: 
       folder: "./storage"
 email:
@@ -29,3 +29,7 @@ tenant:
   enable_bind_mobile: false
 plugins:
   - "@steedos/accounts"
+  - "@steedos/app-crm"
+  - "@steedos/app-contracts"
+  - "@steedos/plugin-qywx"
+  - "@steedos/plugin-enterprise"
