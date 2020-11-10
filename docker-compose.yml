@@ -1,28 +1,28 @@
 version: "3"
 
 services:
-  steedos:
-    image: steedos/steedos-project-oa:1.22.1
-    restart: unless-stopped
-    ports:
-      - "5080:5080"
-    volumes:
-      - ./docker-volumes/steedos/storage:/app/storage
-    environment:
-      - PORT=5080
-      - ROOT_URL=http://localhost:5080
-      - MONGO_URL=mongodb://mongo:27017/steedos
-      - MONGO_OPLOG_URL=mongodb://mongo:27017/local
-      - STEEDOS_CFS_STORE=local
-      - STEEDOS_STORAGE_DIR=/app/storage
-    depends_on:
-      - mongo
+  # steedos:
+  #   image: steedos/steedos-project-oa:1.22.1
+  #   restart: unless-stopped
+  #   ports:
+  #     - "5080:5080"
+  #   volumes:
+  #     - ./docker-volumes/steedos/storage:/app/storage
+  #   environment:
+  #     - PORT=5080
+  #     - ROOT_URL=http://localhost:5080
+  #     - MONGO_URL=mongodb://mongo:27017/steedos
+  #     - MONGO_OPLOG_URL=mongodb://mongo:27017/local
+  #     - STEEDOS_CFS_STORE=local
+  #     - STEEDOS_STORAGE_DIR=/app/storage
+  #   depends_on:
+  #     - mongo
 
   mongo:
     image: mongo:4.2
     restart: unless-stopped
     volumes:
-      - ./docker-volumes/mongo/data/db:/data/db
+      - /srv/docker-volumes/mongo/data/db:/data/db
     command: mongod --oplogSize 128 --profile=1 --slowms=500 --replSet rs0
 
   # this container's job is just run the command to initialize the replica set.

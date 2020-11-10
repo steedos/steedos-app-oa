@@ -2,13 +2,13 @@ datasources:
   default:
     connection:
       url: ${MONGO_URL}
-    objectFiles: 
+    objectFiles:
       - "./src/**"
 public:
   cfs:
     store: ${STEEDOS_CFS_STORE}
-    local: 
-      folder: "./storage"
+    local:
+      folder: ${STEEDOS_STORAGE_DIR}
 email:
   host:
   port: 465
@@ -20,7 +20,7 @@ tenant:
   _id:
   name: 华炎魔方
   logo_url:
-  background_url: 
+  background_url:
   enable_register: true
   enable_forget_password: false
   enable_create_tenant: true
@@ -33,3 +33,5 @@ plugins:
   - "@steedos/app-contracts"
   - "@steedos/plugin-qywx"
   - "@steedos/plugin-enterprise"
+cron:
+  instancerecordqueue_interval: 10000
