@@ -22,7 +22,7 @@ services:
     image: mongo:4.2
     restart: unless-stopped
     volumes:
-      - /srv/docker-volumes/mongo/data/db:/data/db
+      - ~/docker-volumes/mongo/data/db:/data/db
     command: mongod --oplogSize 128 --profile=1 --slowms=500 --replSet rs0
 
   # this container's job is just run the command to initialize the replica set.
