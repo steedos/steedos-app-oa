@@ -24,6 +24,8 @@ services:
     volumes:
       - ~/docker-volumes/mongo/data/db:/data/db
     command: mongod --oplogSize 128 --profile=1 --slowms=500 --replSet rs0
+    ports:
+      - "27017:27017"
 
   # this container's job is just run the command to initialize the replica set.
   # it will run the command and remove himself (it will not stay running)
