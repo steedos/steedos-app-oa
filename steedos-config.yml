@@ -9,6 +9,14 @@ public:
     store: ${STEEDOS_CFS_STORE}
     local:
       folder: ${STEEDOS_STORAGE_DIR}
+cfs:
+  aws:
+    endpoint: ${STEEDOS_CFS_ALIYUN_ENDPOINT}
+    bucket: ${STEEDOS_CFS_ALIYUN_BUCKET}
+    accessKeyId: ${STEEDOS_CFS_ALIYUN_ACCESSKEYID}
+    secretAccessKey: ${STEEDOS_CFS_ALIYUN_SECRETACCESSKEY}
+    s3ForcePathStyle: true
+    signatureVersion: v4
 email:
   host:
   port: 465
