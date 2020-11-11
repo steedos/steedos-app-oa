@@ -3503,6 +3503,14 @@ available-typed-arrays@^1.0.0, available-typed-arrays@^1.0.2:
   dependencies:
     array-filter "^1.0.0"
 
+aws-sdk@2.0.23:
+  version "2.0.23"
+  resolved "https://registry.npm.taobao.org/aws-sdk/download/aws-sdk-2.0.23.tgz?cache=0&sync_timestamp=1605046147064&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Faws-sdk%2Fdownload%2Faws-sdk-2.0.23.tgz#be21cab88609918699e79b380e060e02f4c89ba9"
+  integrity sha1-viHKuIYJkYaZ55s4DgYOAvTIm6k=
+  dependencies:
+    xml2js "0.2.6"
+    xmlbuilder "0.4.2"
+
 aws-sign2@~0.6.0:
   version "0.6.0"
   resolved "https://registry.npm.taobao.org/aws-sign2/download/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
@@ -14257,6 +14265,11 @@ sass-loader@8.0.2:
     schema-utils "^2.6.1"
     semver "^6.3.0"
 
+sax@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.npm.taobao.org/sax/download/sax-0.4.2.tgz#39f3b601733d6bec97105b242a2a40fd6978ac3c"
+  integrity sha1-OfO2AXM9a+yXEFskKipA/Wl4rDw=
+
 sax@0.6.x:
   version "0.6.1"
   resolved "https://registry.npm.taobao.org/sax/download/sax-0.6.1.tgz#563b19c7c1de892e09bfc4f2fc30e3c27f0952b9"
@@ -16978,6 +16991,13 @@ xml-parser-xo@^3.0.0:
   resolved "https://registry.npm.taobao.org/xml-parser-xo/download/xml-parser-xo-3.0.0.tgz#4d46f1962e5100f228b5f73f34c61bb798430195"
   integrity sha1-TUbxli5RAPIotfc/NMYbt5hDAZU=
 
+xml2js@0.2.6:
+  version "0.2.6"
+  resolved "https://registry.npm.taobao.org/xml2js/download/xml2js-0.2.6.tgz#d209c4e4dda1fc9c452141ef41c077f5adfdf6c4"
+  integrity sha1-0gnE5N2h/JxFIUHvQcB39a399sQ=
+  dependencies:
+    sax "0.4.2"
+
 xml2js@0.4.4:
   version "0.4.4"
   resolved "https://registry.npm.taobao.org/xml2js/download/xml2js-0.4.4.tgz#3111010003008ae19240eba17497b57c729c555d"
@@ -17002,6 +17022,11 @@ xml2json@^0.12.0:
     hoek "^4.2.1"
     joi "^13.1.2"
     node-expat "^2.3.18"
+
+xmlbuilder@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.npm.taobao.org/xmlbuilder/download/xmlbuilder-0.4.2.tgz#1776d65f3fdbad470a08d8604cdeb1c4e540ff83"
+  integrity sha1-F3bWXz/brUcKCNhgTN6xxOVA/4M=
 
 xmlbuilder@>=1.0.0:
   version "15.1.1"

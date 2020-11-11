@@ -1,23 +1,6 @@
 version: "3"
 
 services:
-  # steedos:
-  #   image: steedos/steedos-project-oa:1.22.1
-  #   restart: unless-stopped
-  #   ports:
-  #     - "5080:5080"
-  #   volumes:
-  #     - ./docker-volumes/steedos/storage:/app/storage
-  #   environment:
-  #     - PORT=5080
-  #     - ROOT_URL=http://localhost:5080
-  #     - MONGO_URL=mongodb://mongo:27017/steedos
-  #     - MONGO_OPLOG_URL=mongodb://mongo:27017/local
-  #     - STEEDOS_CFS_STORE=local
-  #     - STEEDOS_STORAGE_DIR=/app/storage
-  #   depends_on:
-  #     - mongo
-
   mongo:
     image: mongo:4.2
     restart: unless-stopped
@@ -44,3 +27,20 @@ services:
         done; (exit $$s)"
     depends_on:
       - mongo
+
+  minio:
+    image: minio/minio:RELEASE.2020-11-10T21-02-24Z
+    ports:
+      - "9000:9000"
+    volumes:
+      - ~/docker-volumes/minio/data:/data
+      - ~/docker-volumes/minio/config:/root/.minio
+    environment:
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+    command: server /data
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 30s
+      timeout: 20s
+      retries: 3
