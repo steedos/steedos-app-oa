@@ -1,6 +1,15 @@
 version: "3"
 
 services:
+  nginx:
+    image: steedos/nginx-logrotate:1.17.7
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/nginx/docker.conf:/etc/nginx/conf.d/docker.conf
+    restart: unless-stopped
+
   mongo:
     image: mongo:4.2
     restart: unless-stopped
