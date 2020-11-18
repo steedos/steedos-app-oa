@@ -18,7 +18,7 @@ cfs:
     s3ForcePathStyle: true
     signatureVersion: v4
 tenant:
-  _id:
+  _id: ${STEEDOS_TENANT_ID}
   enable_register: true
   enable_forget_password: false
   saas: false
@@ -33,7 +33,7 @@ sms:
     appkey: ${STEEDOS_SMS_QCLOUD_APPKEY}
     signname: ${STEEDOS_SMS_QCLOUD_SIGNNAME}
 email:
-  from: 华炎云 <noreply@steedos.com>
+  from: ${MAIL_FROM}
   url: ${MAIL_URL}
 plugins:
   - "@steedos/accounts"
@@ -43,3 +43,6 @@ plugins:
   - "@steedos/plugin-enterprise"
 cron:
   instancerecordqueue_interval: 10000
+  mailqueue_interval: 10000
+  push_interval: 1000
+  webhookqueue_interval: 1000
