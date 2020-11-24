@@ -18,6 +18,7 @@ cfs:
     s3ForcePathStyle: true
     signatureVersion: v4
 tenant:
+  _id: ${STEEDOS_TENANT_ID}
   enable_register: true
   enable_forget_password: false
   saas: false
