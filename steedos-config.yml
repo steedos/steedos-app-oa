@@ -23,9 +23,9 @@ tenant:
   enable_forget_password: false
   saas: false
   enable_password_login: true
-  enable_mobile_code_login: true
+  enable_mobile_code_login: false
   enable_email_code_login: false
-  enable_bind_mobile: ${STEEDOS_TENANT_ENABLE_BIND_MOBILE}
+  enable_bind_mobile: false
 sms:
   qcloud:
     smsqueue_interval: 1000
