@@ -12,7 +12,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "os": "cp -r ../object-server/packages/* node_modules/@steedos/",
         "oss": "cp -r ../object-server/packages/standard-objects/* node_modules/@steedos/standard-objects/ && yarn start",
-        "pkg": "pkg . --options max_old_space_size=2048 --out-path=dist/"
+        "pkg": "pkg . --options max_old_space_size=2048 --out-path=../../pkg/dist/"
     },
     "bin": "./server.js",
     "pkg": {
@@ -23,12 +23,9 @@
             "node_modules/@steedos/webapp/build/**",
             "node_modules/@steedos/i18n/**",
             "node_modules/@steedos/app-crm/**",
-            "node_modules/@steedos/steedos-plugin-workflow/**",
-            "steedos-config.yml",
-            ".env"
+            "node_modules/@steedos/steedos-plugin-workflow/**"
         ],
         "targets": [
-            "node12-macos-x64",
             "node12-win-x64"
         ]
     },
