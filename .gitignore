@@ -6,3 +6,4 @@ isolate-*.log
 .DS_Store
 storage/**
 docker-volumes
+dist/**

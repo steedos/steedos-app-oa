@@ -1,7 +1,7 @@
-require('dotenv-flow').config();
+require('dotenv-flow').config({ path: '/snapshot/steedos-project-oa' });
 
 var server = require('@steedos/meteor-bundle-runner');
-var steedos = require('@steedos/core')
+var steedos = require('@steedos/core');
 
 server.Fiber(function () {
     try {
@@ -10,8 +10,8 @@ server.Fiber(function () {
             steedos.init();
             server.callStartupHooks();
             server.runMain();
-        })
+        });
     } catch (error) {
-       console.error(error.stack)
+        console.error(error.stack);
     }
-}).run()
+}).run();

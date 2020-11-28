@@ -1,5 +1,5 @@
 {
-    "name": "steedos-project-saas",
+    "name": "steedos-project-oa",
     "version": "1.0.0",
     "description": "",
     "engines": {
@@ -11,7 +11,26 @@
         "start": "node --max-old-space-size=2048 --stack_trace_limit=200 server.js",
         "test": "echo \"Error: no test specified\" && exit 1",
         "os": "cp -r ../object-server/packages/* node_modules/@steedos/",
-        "oss": "cp -r ../object-server/packages/standard-objects/* node_modules/@steedos/standard-objects/ && yarn start"
+        "oss": "cp -r ../object-server/packages/standard-objects/* node_modules/@steedos/standard-objects/ && yarn start",
+        "pkg": "pkg . --options max_old_space_size=2048 --out-path=dist/"
+    },
+    "bin": "./server.js",
+    "pkg": {
+        "scripts": [],
+        "assets": [
+            "node_modules/@steedos/schemas/object/schema.json",
+            "node_modules/@steedos/standard-objects/**",
+            "node_modules/@steedos/webapp/build/**",
+            "node_modules/@steedos/i18n/**",
+            "node_modules/@steedos/app-crm/**",
+            "node_modules/@steedos/steedos-plugin-workflow/**",
+            "steedos-config.yml",
+            ".env"
+        ],
+        "targets": [
+            "node12-macos-x64",
+            "node12-win-x64"
+        ]
     },
     "author": "",
     "license": "ISC",
