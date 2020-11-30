@@ -6,17 +6,9 @@ datasources:
       - "./src/**"
 public:
   cfs:
-    store: ${STEEDOS_CFS_STORE}
+    store: local
     local:
-      folder: ${STEEDOS_STORAGE_DIR}
-cfs:
-  aws:
-    endpoint: ${STEEDOS_CFS_S3_ENDPOINT}
-    bucket: ${STEEDOS_CFS_S3_BUCKET}
-    accessKeyId: ${STEEDOS_CFS_S3_ACCESSKEYID}
-    secretAccessKey: ${STEEDOS_CFS_S3_SECRETACCESSKEY}
-    s3ForcePathStyle: true
-    signatureVersion: v4
+      folder: storage
 tenant:
   _id: ${STEEDOS_TENANT_ID}
   enable_register: true
