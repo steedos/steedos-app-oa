@@ -12,7 +12,6 @@ services:
       - PORT=5080
       - ROOT_URL=http://localhost:5080
       - MONGO_URL=mongodb://mongo:27017/steedos
-      - MONGO_OPLOG_URL=mongodb://mongo:27017/local
       - STEEDOS_CFS_STORE=local
       - STEEDOS_STORAGE_DIR=/app/storage
     depends_on:
