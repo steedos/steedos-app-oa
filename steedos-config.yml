@@ -8,7 +8,7 @@ public:
   cfs:
     store: local
     local:
-      folder: storage
+      folder: ./storage
 tenant:
   _id: ${STEEDOS_TENANT_ID}
   enable_register: true
