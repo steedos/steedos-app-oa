@@ -17,8 +17,7 @@
 </p>
 
 <p align="center" style="border-top: solid 1px #cccccc">
-  Help you track and manage projects, milestones, tasks, blocked tasks, overdue tasks, time, cost, and has detailed reporting functions. The system is based on Steedos Platform and metadata driven, which can be quickly customized.
-
+  Open source collaborative office system, developed based on Steedos, can be customized at will.
 </p>
 
 <h3 align="center">

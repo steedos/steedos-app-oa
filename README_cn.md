@@ -15,7 +15,7 @@
 </p>
 
 <p align="center" style="border-top: solid 1px #cccccc">
-  管理审批、文档、任务、日程
+  开源协同办公系统，基于华炎魔方开发，可自主随心定制。
 </p>
 
 <h3 align="center">
