@@ -1,6 +1,6 @@
 name: 办公
 code: oa
-description: 管理审批、文档、任务、日程
+description: 协同办公系统，包含审批、文档、公告、任务、日程等模块。
 icon_slds: groups
 sort: 10
 is_creator: true
