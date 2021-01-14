@@ -1,37 +1,30 @@
 {
-    "name": "steedos-project-saas",
-    "version": "1.0.0",
+    "name": "@steedos/app-oa",
+    "version": "1.23.0",
     "description": "",
-    "engines": {
-        "node": ">=10"
-    },
-    "main": "server.js",
+    "main": "index.js",
     "scripts": {
         "debug": "nodemon server.js",
-        "start": "node --max-old-space-size=2048 --stack_trace_limit=200 server.js",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "os": "cp -r ../object-server/packages/* node_modules/@steedos/",
-        "oss": "cp -r ../object-server/packages/standard-objects/* node_modules/@steedos/standard-objects/ && yarn start"
+        "start": "node server.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "@steedos/accounts": "1.22.4",
-        "@steedos/app-contracts": "1.22.4",
-        "@steedos/app-crm": "1.22.4",
-        "@steedos/plugin-enterprise": "1.22.4",
-        "@steedos/plugin-qywx": "^0.0.10",
-        "@steedos/steedos-plugin-workflow": "^2.1.1",
-        "aliyun-sdk": "1.12.3",
-        "aws-sdk": "2.0.23",
-        "dotenv-flow": "^3.1.0",
-        "node-rsa": "^1.0.8",
-        "pug": "^3.0.0",
-        "request-ip": "^2.1.3",
-        "steedos-server": "^1.22.4"
+    "private": false,
+    "license": "MIT",
+    "publishConfig": {
+        "access": "public"
     },
     "devDependencies": {
-        "nodemon": "^1.19.1"
+        "@steedos/accounts": "^1.23.0-alpha.16",
+        "@steedos/app-contracts": "^1.23.0-alpha.16",
+        "@steedos/app-crm": "^1.23.0-alpha.16",
+        "@steedos/plugin-enterprise": "^1.23.0-alpha.16",
+        "@steedos/plugin-qywx": "^0.0.16",
+        "@steedos/steedos-plugin-workflow": "^2.0.8",
+        "@steedos/word-template": "^1.23.0-alpha.16",
+        "dotenv-flow": "^3.1.0",
+        "nodemon": "^1.19.1",
+        "steedos-server": "^1.23.0-alpha.16"
     },
     "homepage": "https://developer.steedos.com",
     "resolutions": {
@@ -43,6 +36,7 @@
         "**/bcrypt": "3.0.6",
         "**/samlp": "3.4.1",
         "**/xmldom": "0.2.1",
+        "**/tslib": "1.11.2",
         "**/fibers": "^4.0.3"
     }
 }

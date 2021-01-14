@@ -2,47 +2,38 @@ datasources:
   default:
     connection:
       url: ${MONGO_URL}
-    objectFiles:
-      - "./src/**"
+    objectFiles: 
+      - "./steedos-app/**"
 public:
   cfs:
-    store: ${STEEDOS_CFS_STORE}
-    local:
-      folder: ${STEEDOS_STORAGE_DIR}
-cfs:
-  aws:
-    endpoint: ${STEEDOS_CFS_S3_ENDPOINT}
-    bucket: ${STEEDOS_CFS_S3_BUCKET}
-    accessKeyId: ${STEEDOS_CFS_S3_ACCESSKEYID}
-    secretAccessKey: ${STEEDOS_CFS_S3_SECRETACCESSKEY}
-    s3ForcePathStyle: true
-    signatureVersion: v4
+    store: "local"
+    local: 
+      folder: "./storage"
+  templateSpaceId: 'template'
+email:
+  host:
+  port: 465
+  username:
+  password:
+  secure: true
+  from:
 tenant:
-  _id: ${STEEDOS_TENANT_ID}
+  _id:
+  name: 华炎魔方
+  logo_url:
+  background_url: 
   enable_register: true
-  enable_forget_password: false
-  saas: false
+  enable_forget_password: true
+  enable_create_tenant: true
   enable_password_login: true
   enable_mobile_code_login: false
-  enable_email_code_login: false
+  enable_bind_email: false
   enable_bind_mobile: false
-sms:
-  qcloud:
-    smsqueue_interval: 1000
-    sdkappid: ${STEEDOS_SMS_QCLOUD_SDKAPPID}
-    appkey: ${STEEDOS_SMS_QCLOUD_APPKEY}
-    signname: ${STEEDOS_SMS_QCLOUD_SIGNNAME}
-email:
-  from: ${MAIL_FROM}
-  url: ${MAIL_URL}
 plugins:
   - "@steedos/accounts"
+  - "@steedos/metadata-api"
+  - "@steedos/word-template"
   - "@steedos/app-crm"
   - "@steedos/app-contracts"
   - "@steedos/plugin-qywx"
   - "@steedos/plugin-enterprise"
-cron:
-  instancerecordqueue_interval: 10000
-  mailqueue_interval: 10000
-  push_interval: 1000
-  webhookqueue_interval: 1000
