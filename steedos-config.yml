@@ -35,5 +35,4 @@ plugins:
   - "@steedos/word-template"
   - "@steedos/app-crm"
   - "@steedos/app-contracts"
-  - "@steedos/plugin-qywx"
   - "@steedos/plugin-enterprise"
