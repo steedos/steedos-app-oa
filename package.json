@@ -1,6 +1,6 @@
 {
     "name": "@steedos/app-oa",
-    "version": "1.23.0-alpha.16",
+    "version": "1.23.0-alpha.18",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -15,16 +15,16 @@
         "access": "public"
     },
     "devDependencies": {
-        "@steedos/accounts": "^1.23.0-alpha.16",
-        "@steedos/app-contracts": "^1.23.0-alpha.16",
-        "@steedos/app-crm": "^1.23.0-alpha.16",
-        "@steedos/plugin-enterprise": "^1.23.0-alpha.16",
+        "@steedos/accounts": "^1.23.0-alpha.18",
+        "@steedos/app-contracts": "^1.23.0-alpha.18",
+        "@steedos/app-crm": "^1.23.0-alpha.18",
+        "@steedos/plugin-enterprise": "^1.23.0-alpha.18",
         "@steedos/plugin-qywx": "^0.0.16",
         "@steedos/steedos-plugin-workflow": "^2.0.8",
         "@steedos/word-template": "^1.23.0-alpha.16",
         "dotenv-flow": "^3.1.0",
         "nodemon": "^1.19.1",
-        "steedos-server": "^1.23.0-alpha.16"
+        "steedos-server": "^1.23.0-alpha.18"
     },
     "homepage": "https://developer.steedos.com",
     "resolutions": {
