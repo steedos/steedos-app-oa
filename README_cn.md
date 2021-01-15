@@ -54,7 +54,7 @@
 
 - 支持流程多维度绩效分析：支持包含基于表单数据的分析、流程规则的分析、流程时间与效率的分析、流程指标库的分析等多维度的流程绩效优化体系，建立一套PDCA持续不断的流程管控体系。
 
-[多维报表分析](https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.mp4)
+报表引擎请参考 [多维报表分析](https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/steedos/features-report.mp4)
 
 # 系统功能
 
@@ -102,7 +102,7 @@
 
 可以实现企业各类业务数据在不同异构系统间的交互集成，通过流程引擎连接所有业务接口，最终打通各个信息孤岛，形成企业信息一体化的管理体系。
 
-[如何配置合同审批流程？]("https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.mp4)
+配置流程请参考 [如何配置合同审批流程？]("https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.mp4)
 
 # 关于华炎魔方
 
@@ -143,15 +143,6 @@ yarn start
 
 如果您有任何疑问或想与其他华炎魔方用户交谈，请[点击进入讨论](https://github.com/steedos/steedos-platform/discussions)或扫码添加以下联系方式与我们联系！
 
-### 开发人员微信群
-
- ![开发者微信交流群](https://steedos.github.io/assets/github/platform/cn/QR_wechat_developers.jpg)
-
-### 商务咨询
-
-![商务咨询](https://steedos.github.io/assets/github/platform/cn/business_consulting.jpg)
-
-### 微信公众号
-
-![微信公众号](https://steedos.github.io/assets/github/platform/cn/public_number.jpg)
- 
+| ![开发者微信交流群](https://steedos.github.io/assets/github/platform/cn/QR_wechat_developers.jpg) | ![商务咨询](https://steedos.github.io/assets/github/platform/cn/business_consulting.jpg)        | ![微信公众号](https://www.steedos.com/assets/github/platform/cn/public_number.jpg)|
+| :-----: | :-----: | :-----: |
+| 开发人员微信群  | 商务咨询  | 微信公众号 |
