@@ -102,7 +102,7 @@
 
 可以实现企业各类业务数据在不同异构系统间的交互集成，通过流程引擎连接所有业务接口，最终打通各个信息孤岛，形成企业信息一体化的管理体系。
 
-配置流程请参考 [如何配置合同审批流程？]("https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.mp4)
+配置流程请参考 [如何配置合同审批流程？](https://www-steedos-com.oss-accelerate.aliyuncs.com/videos/workflow/admin-contracts.mp4)
 
 # 关于华炎魔方
 
