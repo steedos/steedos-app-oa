@@ -18,7 +18,7 @@
         "access": "public"
     },
     "devDependencies": {
-        "@steedos/service-metadata": "~1.0.0",
+        "@steedos/service-metadata-server": "~1.0.0",
         "@steedos/service-package-loader": "~0.0.1",
         "@steedos/service-steedos-server": "~0.0.1",
         "@steedos/app-contracts": "^1.23.23",
