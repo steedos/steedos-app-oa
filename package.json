@@ -1,6 +1,6 @@
 {
     "name": "@steedos/app-oa",
-    "version": "1.23.34",
+    "version": "1.23.35",
     "description": "",
     "main": "index.js",
     "scripts": {
@@ -17,8 +17,8 @@
     },
     "devDependencies": {
         "@steedos/accounts": "^1.23.34",
-        "@steedos/app-contracts": "^1.23.34",
-        "@steedos/app-crm": "^1.23.34",
+        "@steedos/app-contracts": "^1.23.35",
+        "@steedos/app-crm": "^1.23.35",
         "@steedos/plugin-enterprise": "^1.23.34",
         "@steedos/plugin-qywx": "^0.0.16",
         "@steedos/steedos-plugin-workflow": "^2.0.8",
